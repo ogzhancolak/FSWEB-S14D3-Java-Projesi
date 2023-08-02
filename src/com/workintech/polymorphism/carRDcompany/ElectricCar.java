@@ -17,4 +17,16 @@ public class ElectricCar extends CarSkeleton{
     public int getBatterySize() {
         return batterySize;
     }
+
+    public String startEngine() {
+        return getName() + " is starting engine.";
+    }
+
+    public String drive() {
+        return getName() + " being drive." + runEngine();
+    }
+
+    protected String runEngine() {
+        return getName() + " engine running.";
+    }
 }

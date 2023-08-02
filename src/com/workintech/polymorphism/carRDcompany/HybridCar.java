@@ -23,4 +23,16 @@ public class HybridCar extends CarSkeleton{
     public int getCylinders() {
         return cylinders;
     }
+
+    public String startEngine() {
+        return getName() + " is starting engine.";
+    }
+
+    public String drive() {
+        return getName() + " being drive." + runEngine();
+    }
+
+    protected String runEngine() {
+        return getName() + " engine running.";
+    }
 }

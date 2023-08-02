@@ -22,17 +22,10 @@ public class CarSkeleton {
     }
 
     public String drive() {
-        return getName() + " being drive.";
+        return getName() + " being drive." + runEngine();
     }
 
-    public void runEngine(CarSkeleton carSkeleton) {
-
-        if(carSkeleton instanceof GasPoweredCar) {
-            System.out.println("Gas powered engine started.");
-        }else if (carSkeleton instanceof ElectricCar){
-            System.out.println("Electric engine started.");
-        }else if (carSkeleton instanceof HybridCar){
-            System.out.println("Hybrid engine started.");
-        }
+    protected String runEngine() {
+        return getName() + " engine running.";
     }
 }
